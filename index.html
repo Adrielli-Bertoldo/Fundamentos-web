@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<!-- Código copiado do Google Fonts -->
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
-    
-    <!-- Fim do Código -->
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,84 +10,64 @@
     <link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
 
 	<!-- Link para a Folha de Estilo da Página - CSS -->
-<link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Código copiado do Google Fonts -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
 
     <title>Meu Perfil</title>
 </head>
     <body>
         <!-- Cabeçalho da Página (header) -->
         <header>
-
-            <!-- Div Conteudo do Cabeçalho -->
             <div id="header_content" class="flex"> 
-
-                <!-- Titulo do Cabeçalho -->
                 <div id="Titulo">
                     <h1>A TEORIA DE DRI</h1>
-
                 </div>
-
                  <!-- Conteudo do Menu da Página (header) -->
-                <div id="menu   ">
-                    <a href="index.html">Home</a>
-                    <li>
-                    </li>
-                        <a href="contato.html">Contato</a>
-                    <li>
-                    </li>
-
-                    </ul>
+            <div id="menu">
+                <nav>
+                    <ul id="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                    </ul>   
                 </nav>
             </div>
-        </header>
-
-        <!-- Seção Principal da Página (main) -->
+        </div>
+    </header>
         <main>
 			<!-- Seção Sobre você -->
 			<section id="about" class="flex_start">
-
-				<!-- Título da Seção -->
 				<h2>Sobre Dri</h2>
-
-				<!-- Conteúdo da Seção -->
 				<div id="conteudo" class="flex">
-
-					<!-- Imagem do criador do conteúdo -->
 					<img
 						src="./assets/img/eu.jpg" 
 						alt="Foto do criador desse conteudo"
-
-						class="img_profile
 					/>
-
-					<!-- Texto sobre o criador do conteúdo-->
 					<article id="sobre_texto">
-						<p>
+						<p class="texto_sobre">
+						
 						Sou apaixonada por carros e tudo que envolve o universo automotivo,
 					    desde design até performance. Também adoro tecnologia e fico sempre
 					    curiosa para conhecer novidades e inovações que facilitam o nosso dia a dia!	
 
 						</p>
-                           <p>
+                        <p>
 						Minha série favorita é The Big Bang Theory, que além de me divertir,
 					    combina perfeitamente com meu interesse por ciência, nerdices e boas histórias...
 						</p>
-
 					</article>
-
 				</div>
-
 			</section>
 		
 			<!-- Seção contendo um vídeo de sua preferência -->
 			<section id="video" class="flex_start">
-
-				<!-- Titulo da seção -->
-				<h2>Meu video favorito:<br></h2>
-
-				<!-- Video da seção -->
+				<h2>Meu video favorito:</h2>
 				 <div id="youtube" class="flex">
-
 		<iframe 
             width="560" 
             height="315" 
@@ -102,76 +75,13 @@
             frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
             referrerpolicy="strict-origin-when-cross-origin" 
-            allowfullscreen
-			>
-		     </iframe>
-
+            allowfullscreen></iframe>
 		 </div>
-
 	</section>
-
 </main>
-			
-			<!-- Seção Formulário de Contato e Redes Sociais -->
-			<section id="contact">
-				
-				<!-- Seção do Formulário-->
-				<form action="#" method="submit" id="formulario">
-					<label for="nome">Nome: </label>
-					<input
-						id="name"
-						type="text"
-						name="name"
-						placeholder="Digite seu nome"
-						required
-					/>
-					<span id="txtNome"></span>
-
-					<label for="email">Email: </label>
-					<input
-						id="email"
-						type="email"
-						name="email"
-						placeholder="Digite seu email"
-						required
-					/>
-					<span id="txtEmail"></span>
-
-					<label for="subject">Assunto: </label>
-					<input
-						id="subject"
-						type="text"
-						name="subject"
-						placeholder="Digite o título da mensagem"
-						required
-					/>
-					<span id="txtSubject"></span>
-
-					<label for="message">Mensagem: </label>
-					<textarea
-						id="message"
-						name="message"
-						placeholder="Digite sua mensagem"
-						required
-					>
-					</textarea>
-
-					<button type="submit">Enviar</button>
-				</form>
-
-				<!-- Seção do Google Maps -->
-				<article id="mapa">
-
-				</article>
-			</section>
-		</main>
-
 		<!-- Rodapé da Página (footer) -->
 		<footer class="flex">
-        
-			<!-- Seção de Contato - Redes Sociais-->
             <section id="redes_sociais">
-
 				<a href="https://www.linkedin.com/in/adrielli-bertoldo/">
                         <img src="assets/img/ins.png" alt="LinkedIn" />
                     </a>
@@ -181,12 +91,10 @@
                     <a href="https://www.instagram.com/adrielli_bertoldo/">
                         <img src="assets/img/in.png" alt="Instagram" />
 					</a>
-            </section>
-			
+            </section>	
             <h3>
 				Feito com 😽 por Adrielli Bertoldo - 2025
-			</h3>
-        
+			</h3>       
         </footer>
 	</body>
 </html>

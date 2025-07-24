@@ -18,152 +18,96 @@
     
     <title>Meu Perfil</title>
 </head>
-    <body>
-        <!-- Cabeçalho da Página (header) -->
-        <header>
-
-            <!-- Div Conteudo do Cabeçalho -->
-            <div id="header_content"class="flex">
-
-                <!-- Titulo do Cabeçalho -->
-                <div id="Titulo">
-                    <h1>A TEORIA DE DRI</h1>
-
-                </div>
-
-                 <!-- Conteudo do Menu da Página (header) -->
-                <div id="menu">
-                    <a href="index.html">Home</a>
-                    <li>
-                    </li>
-                        <a href="contato.html">Contato</a>
-                    <li>
-                    </li>
-
+    <!-- ...existing code... -->
+<body>
+    <!-- Cabeçalho da Página (header) -->
+    <header>
+        <div id="header_content" class="flex">
+            <div id="Titulo">
+                <h1>A TEORIA DE DRI</h1>
+            </div>
+            <div id="menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contato.html">Contato</a></li>
                     </ul>
                 </nav>
             </div>
-		</div>
+        </div>
     </header>
 
-        <!-- Seção Principal da Página (main) -->
-        <main>
-			<!-- Seção Sobre você -->
-			<section id="about">
-
-				<!-- Título da Seção -->
-				<h2>Sobre Dri</h2>
-
-				<!-- Conteúdo da Seção -->
-				<div id="conteudo">
-
-					<!-- Imagem do criador do conteúdo -->
-					<img
-						src="./assets/img/eu.jpg" 
-						alt="Foto do criador desse conteudo"
-					/>
-
-					<!-- Texto sobre o criador do conteúdo -->
-					<article id="sobre_texto">
-						<p>
-							Sou apaixonada por carros e tudo que envolve o universo automotivo, desde design até performance.
-                            Também adoro tecnologia e fico sempre curiosa para conhecer novidades e inovações que facilitam o nosso dia a dia!
-						</p>
-                           <p>
-							Minha série favorita é The Big Bang Theory, que além de me divertir, combina perfeitamente com meu interesse por ciência, nerdices e boas histórias...
-						</p>
-
-					</article>
-				</div>
-			</section>
-			<h2>Meu video favorito:<br></h2>
-
-			<!-- Seção contendo um vídeo de sua preferência -->
-			<section id="video">
-				<iframe 
-            width="560" 
-            height="315" 
-            src="https://www.youtube.com/embed/TUxU31WZU70?si=uqtrGgz3muDwMrs0" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" 
-            allowfullscreen></iframe>
-
-			</section>
-
-		<!-- Seção Principal da Página (main) -->
-		<main>
-			
-			<!-- Seção Formulário de Contato e Redes Sociais -->
-			<section id="contact"class="flex">
-				
-			<!-- Seção do Formulário-->
-			<form action="#" method="submit" id="formulario">
+    <!-- Seção Principal da Página (main) -->
+    <main>
+        <section id="about">
+            <h2>Sobre Dri</h2>
+            <div id="conteudo">
+                <img src="./assets/img/eu.jpg" alt="Foto do criador desse conteudo"/>
+                <article id="sobre_texto">
+                    <p>Sou apaixonada por carros e tudo que envolve o universo automotivo, desde design até performance.
+                    Também adoro tecnologia e fico sempre curiosa para conhecer novidades e inovações que facilitam o nosso dia a dia!</p>
+                    <p>Minha série favorita é The Big Bang Theory, que além de me divertir, combina perfeitamente com meu interesse por ciência, nerdices e boas histórias...</p>
+                </article>
+            </div>
+        </section>
+        <h2>Meu video favorito:<br></h2>
+        <section id="video">
+            <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/TUxU31WZU70?si=uqtrGgz3muDwMrs0" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen></iframe>
+        </section>
+        <section id="contact" class="flex">
+            <form action="#" method="submit" id="formulario">
                 <label for="name">Nome: </label>
                 <input type="text" id="name" name="name" placeholder="Digite seu nome">
                 <span id="txtNome"></span>
-
                 <label for="email">Email: </label>
                 <input type="text" id="email" name="email" placeholder="Digite seu email">
                 <span id="txtEmail"></span>
-
                 <label for="subject">Assunto: </label>
                 <input type="text" id="subject" name="subject" placeholder="Digite o título da mensagem">
                 <span id="txtNome"></span>
-
                 <label for="message">Mensagem: </label>
                 <textarea name="message" id="message" placeholder="Digite sua mensagem"></textarea>
-
                 <button type="submit">Enviar</button>
-            </form>	
-				
-				<!-- Seção do Google Maps -->
-               <article id="mapa" class="flex_start endereco">
-                    <p>Av. Paulista, 100</p>
-					<p>São Paulo - SP</p>
-		<iframe
-		src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3056.9651334896057!2d-46.64865742743205!3d-23.570948331924132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59bd92bce431%3A0xc37ded133806ef0b!2sAv.%20Paulista%2C%20100%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-000!5e1!3m2!1spt-BR!2sbr!4v1752860644948!5m2!1spt-BR!2sbr"
-		width="600"
-		height="450"
-		style="border:0;"
-		allowfullscreen=""
-		loading="lazy"
-		referrerpolicy="no-referrer-when-downgrade"
-		onmousemove="mapaZoom()" 
-		onmouseout="mapaNormal()" 
-		>
-	    </iframe>
-	
-	</article>
-    
-   </section>
-
-</main>
-
-		<!-- Rodapé da Página (footer) -->
-		<footer class="flex">
-			
-			<!-- Seção de Contato - Redes Sociais -->
-			<section id="redes_sociais">
-
-				<a href="https://www.linkedin.com/in/adrielli-bertoldo/">
-                        <img src="assets/img/in.png" alt="LinkedIn" class="social_icon"/>
-                    </a>
-                    <a href="https://github.com/adrielli-bertoldo">
-                        <img src="assets/img/hu.png" alt="Github" class="social_icon"/>
-                    </a>
-                    <a href="https://www.instagram.com/adrielli_bertoldo/">
-                        <img src="assets/img/ins.png" alt="Instagram" class="social_icon"/>
-                    </a>
-					
-            </section>
-			<!-- Texto do Rodapé -->			 
-            <h3>Feito com 😽 por Adrielli Bertoldo - 2025</h3>
-			
-		</footer>
-
-		<!-- Script JavaScript-->
-<script src="assets/js/script.js"></script>
-	</body>
+            </form>
+            <article id="mapa" class="flex_start endereco">
+                <p>Av. Paulista, 100</p>
+                <p>São Paulo - SP</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3056.9651334896057!2d-46.64865742743205!3d-23.570948331924132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59bd92bce431%3A0xc37ded133806ef0b!2sAv.%20Paulista%2C%20100%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-000!5e1!3m2!1spt-BR!2sbr!4v1752860644948!5m2!1spt-BR!2sbr"
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    onmousemove="mapaZoom()" 
+                    onmouseout="mapaNormal()">
+                </iframe>
+            </article>
+        </section>
+    </main>
+    <footer class="flex">
+        <section id="redes_sociais">
+            <a href="https://www.linkedin.com/in/adrielli-bertoldo/">
+                <img src="assets/img/in.png" alt="LinkedIn" class="social_icon"/>
+            </a>
+            <a href="https://github.com/adrielli-bertoldo">
+                <img src="assets/img/hu.png" alt="Github" class="social_icon"/>
+            </a>
+            <a href="https://www.instagram.com/adrielli_bertoldo/">
+                <img src="assets/img/ins.png" alt="Instagram" class="social_icon"/>
+            </a>
+        </section>
+        <h3>Feito com 😽 por Adrielli Bertoldo - 2025</h3>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
 </html>
